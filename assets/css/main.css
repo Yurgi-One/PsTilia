@@ -1,5 +1,3 @@
-@import url(all.min.css);
-@import url(fonts.css);
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2253,6 +2251,7 @@ input[type="radio"]:focus + label:before {
     font-family: 'Font Awesome 5 Brands';
 }
 
+
 .icon.major {
     border:  none;
     display: inline-block;
@@ -4040,6 +4039,7 @@ ul li p{
     color: #5A80C2; !important; /* Change the Font Awesome icon color */
 }
 
+
 nav img {
     height: auto;
     max-width: 40px;
@@ -4270,3 +4270,4 @@ nav a {
 .offset-left1 {
     transform: translateX(-8%);
 }
+

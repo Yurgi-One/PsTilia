@@ -5,6 +5,8 @@
     <title>PS Tilia</title>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport"/>
+    <link href="assets/css/all.min.css" rel="stylesheet"/>
+    <link href="assets/css/fonts.css" rel="stylesheet"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
     <noscript>
         <link href="assets/css/noscript.css" rel="stylesheet"/>
@@ -17,9 +19,7 @@
     <link href="site.webmanifest" rel="manifest"/>
     <script defer src="assets/js/i18next.min.js"></script>
     <script defer src="assets/js/script.js"></script>
-    <script defer src="assets/js/jquery.min.js"></script>
     <link href="favicon-cropped.svg" rel="preload" as="image" type="image/svg+xml">
-
     <meta content="PS Tilia – Softver za pametno upravljanje parkiralištima" name="description">
     <meta name="keywords"
           content="PS Tilia, parkirališta, upravljanje parkiranjem, OCR, ANPR, fiskalizacija, blockchain, GDPR, pametno parkiranje, mobilna naplata, softver za parking">
@@ -33,7 +33,7 @@
         <ul>
             <li>
                 <a class="active logo" href="#main" aria-label="Home">
-                  <span style="max-height: 1em">
+                  <span >
                      <i class="fa-solid fa-home" id="homeFavicon"></i>
                     <link as="image" href="favicon-cropped.svg"
                           type="image/svg+xml" >
@@ -41,11 +41,11 @@
                   </span>
                 </a>
             </li>
-            <li><a aria-label="Prednosti" data-i18n="naviDescription1" href="#prednosti">Prednosti</a></li>
-            <li><a aria-label="Fiskalizacija" data-i18n="naviDescription2" href="#fiskalizacija">Fiskalizacija</a></li>
+                <li><a aria-label="Prednosti" data-i18n="naviDescription1" href="#prednosti">Prednosti</a></li>
+                <li><a aria-label="Fiskalizacija" data-i18n="naviDescription2" href="#fiskalizacija">Fiskalizacija</a></li>
             <!--            <li><a data-i18n="naviDescription3" href="#faQ">Podrška</a></li>-->
             <li><a aria-label="Partneri" class="hide-mobile" data-i18n="naviDescription4" href="#partneri">Partneri</a></li>
-            <li><a aria-label="Kontakt" data-i18n="naviDescription5" href="#footer">Kontakt</a></li>
+                <li><a aria-label="Kontakt" data-i18n="naviDescription5" href="#footer">Kontakt</a></li>
         </ul>
     </nav>
     <!-- Main -->
@@ -60,7 +60,7 @@
                 <div class="content">
                     <header class="major">
                         <h2>
-                            <img alt="" id="logoSlika" src="images/PsTiliaLogo.png"/>
+                            <img alt="PS Tilia logo" id="logoSlika" src="images/PsTiliaLogo.png"/>
                         </h2>
                     </header>
                     <p data-i18n="opisTvrtkeParagraph1" id="opisTilia">
@@ -149,7 +149,7 @@
             </header>
             <ul class="features">
                 <li>
-                    <a class="icon fa-solid fa-car solid major style4 grid-item"
+                    <a class="icon fa-solid fa-car solid major style4 grid-item" aria-label="Automatsko prepoznavanje vozila"
                        href="automatsko-prepoznavanje-vozila" ></a>
                     <h3><a data-i18n="AutomatskoPrepoznavanjeVozila" href="automatsko-prepoznavanje-vozila">Automatsko
                         prepoznavanje vozila</a></h3>
@@ -158,7 +158,7 @@
                         kartama ili fizičkim nadzorom.</p>
                 </li>
                 <li>
-                    <a class="icon fa-solid fa-hand-holding-dollar solid major style1 grid-item"
+                    <a class="icon fa-solid fa-hand-holding-dollar solid major style1 grid-item" aria-label="Jednostavno i fleksibilno placanje"
                        href="opcije-placanja"></a>
                     <h3><a data-i18n="JednostavnoIFleksibilnoPlacanjeTitle" href="opcije-placanja">Jednostavno i
                         fleksibilno plaćanje</a></h3>
@@ -168,7 +168,7 @@
                     </p>
                 </li>
                 <li>
-                    <a class="icon fa-solid fa-parking solid major style3 grid-item" href="parking-bez-rampi"></a>
+                    <a class="icon fa-solid fa-parking solid major style3 grid-item" aria-label="Otvoreni i zatvoreni parking" href="parking-bez-rampi"></a>
                     <h3><a data-i18n="OtvoreniIZatvoreniParkingTitle" href="parking-bez-rampi">Otvoreni i zatvoreni
                         parking</a></h3>
                     <p data-i18n="OtvoreniIZatvoreniParkingDescription">Sustav se prilagođava svim vrstama parkirališta,
@@ -200,7 +200,6 @@
                         Provjera statusa vozila (krađa, blokada) u stvarnom vremenu
                     </span>
                 </li>
-
                 <li>
                     <i class="fa-solid fa-handshake-angle"></i>
                     <span data-i18n="OsiguranjeKupnjeProdajeVozila">
@@ -222,7 +221,7 @@
             </header>
             <ul class="features">
                 <li>
-                    <a class="icon fa-solid fa-file-invoice-dollar solid major style5 grid-item"
+                    <a class="icon fa-solid fa-file-invoice-dollar solid major style5 grid-item" aria-label="Fiskalizacija"
                        href="fiskalizacija-parkiranja"></a>
                     <h3><a data-i18n="FiskalizacijaTitle" href="fiskalizacija-parkiranja">Fiskalizacija</a></h3>
                     <p data-i18n="FiskalizacijaDescription">Naš sustav u potpunosti je usklađen s fiskalizacijskim
@@ -230,7 +229,7 @@
                         izdavanje računa.</p>
                 </li>
                 <li>
-                    <a class="icon fa-solid fa-file-shield solid major style1 grid-item" href="GDPR"></a>
+                    <a class="icon fa-solid fa-file-shield solid major style1 grid-item" aria-label="GDPR" href="GDPR"></a>
                     <h3><a data-i18n="GDPRTitle" href="GDPR">GDPR</a></h3>
                     <p data-i18n="GDPRDescription">
                         Naš sustav u potpunosti je usklađen s Općom uredbom o zaštiti podataka (GDPR), osiguravajući
@@ -238,12 +237,9 @@
                     </p>
                 </li>
                 <li>
-                    <a class="icon fa-solid fa-headset solid major style4 grid-item" href="korisnicka-podrska"></a>
-                    <h3><a data-i18n="KorisnickaPodrskaTitle" href="korisnicka-podrska">Korisnička podrška</a></h3>
-                    <p data-i18n="KorisnickaPodrskaDescription">
-                        Naša korisnička podrška dostupna je 24/7 putem e-maila i telefona te brzo i učinkovito rješava
-                        sva pitanja i tehničke probleme.
-                    </p>
+                    <a class="icon fa-solid fa-receipt solid major style4 grid-item" aria-label="Ispis SMS racuna" href="https://parking.ipt.hr/public/smsinvoice"></a>
+                    <h3><a data-i18n="SmsRacunTitle" href="https://parking.ipt.hr/public/smsinvoice">Ispis SMS racuna</a></h3>
+                    <p data-i18n="SmsRacunDescription">Brz pristup portalu za pregled i ispis SMS racuna.</p>
                 </li>
             </ul>
         </section>
@@ -256,32 +252,42 @@
 
 
 
-                        <div class="col-4"><span class="image fit"><img alt=""
+                        <div class="col-4"><span class="image fit"><img alt="HAMAG-BICRO logotip"
+                                                                        loading="lazy"
                                                                         src="images/logotipovi/HamagBicroLogo.png"/></span>
                         </div>
 
 
-                        <div class="col-4"><span class="image fit"><img alt="" src="images/logotipovi/CoFundedEU2.png"/></span>
+                        <div class="col-4"><span class="image fit"><img
+                                alt="Sufinancirano sredstvima Europske unije"
+                                loading="lazy"
+                                src="images/logotipovi/CoFundedEU2.png"/></span>
                         </div>
 
-                        <div class="col-4"><span class="image fit"><img alt="" src="images/logotipovi/CoFundedEU.png"/></span>
+                        <div class="col-4"><span class="image fit"><img
+                                alt="Suﬁnancirano sredstvima Europske unije - varijanta 2"
+                                loading="lazy"
+                                src="images/logotipovi/CoFundedEU.png"/></span>
                         </div>
 
-                        <div class="col-4  "><span class="image fit"><img alt=""
-                                                                        src="images/logotipovi/hiks.png"/></span>
+                        <div class="col-4  "><span class="image fit"><img
+                                alt="HIKS - Hrvatski institut za kibernetičku sigurnost"
+                                loading="lazy"
+                                src="images/logotipovi/hiks.png"/></span>
                         </div>
 
-                        <div class="col-4 offset-left"><span class="image fit"><img alt=""
-                                                                        src="images/logotipovi/90001remade.png"/></span>
+                        <div class="col-4 offset-left"><span class="image fit"><img
+                                alt="ISO 9001 certifikat kvalitete"
+                                loading="lazy"
+                                src="images/logotipovi/90001remade.png"/></span>
                         </div>
 
 
-                        <div class="col-4  offset-left1"><span class="image fit"><img alt=""
-                                                                        src="images/logotipovi/2701remade.png"/></span>
+                        <div class="col-4  offset-left1"><span class="image fit"><img
+                                alt="ISO 27001 certifikat sigurnosti informacija"
+                                loading="lazy"
+                                src="images/logotipovi/2701remade.png"/></span>
                         </div>
-
-
-
                     </div>
                 </div>
             </header>
@@ -305,6 +311,7 @@
                 </p>
             </section>
             <h2 data-i18n="KontaktirajteNas">Kontaktirajte nas</h2>
+            <p data-i18n="KorisnickaPodrskaDescription">Na�a korisnicka podr�ka dostupna je 24/7 putem e-maila i telefona te brzo i ucinkovito rje�ava sva pitanja i tehnicke probleme.</p>
             <dl class="alt">
                 <dt><i class="fa-solid fa-envelope"></i></dt>
                 <dd><a href="mailto:pstilia@pstilia.hr">pstilia@pstilia.hr</a></dd>
@@ -318,7 +325,7 @@
                 <p>Poslovni sistemi Tilia d.o.o.</p>
                 <p>Vinec 16, 10000 Zagreb</p>
                 <p content="telephone=no"> OIB: 56650449412</p>
-                <p>IBAN: Privredna banka Zagreb HR9723400091110606288</p>
+                <p>IBAN: RBA - HR6824840081107092232</p>
                 <p>Temeljni kapital: 250.000,00 kn uplaćen u cijelosti</p>
                 <p>Direktori: Sabina Kufner mag. ing, Denis Kadić </p>
             </div>
@@ -342,3 +349,10 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+

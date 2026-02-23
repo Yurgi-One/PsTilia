@@ -62,6 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 KorisnickaPodrskaTitle: "Korisnička podrška",
                 KorisnickaPodrskaDescription: "Naša korisnička podrška dostupna je 24/7 putem e-maila i telefona te brzo i učinkovito rješava sva pitanja i tehničke probleme.",
+                SmsRacunTitle: "Ispis SMS racuna",
+                SmsRacunDescription: "Brz pristup portalu za pregled i ispis SMS racuna.",
 
                 NasiPartneri: "Naši partneri",
 
@@ -185,6 +187,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 KorisnickaPodrskaTitle: "Customer Support",
                 KorisnickaPodrskaDescription: "Our customer support is available 24/7 via email and phone, providing quick and efficient resolutions to all inquiries and technical issues.",
+                SmsRacunTitle: "SMS Receipt",
+                SmsRacunDescription: "Quick access to the portal for viewing and printing SMS receipts.",
 
 
                 NajcescePostavljenaPitanja: "Frequently Asked Questions",
@@ -323,3 +327,8 @@ $(document).ready(function () {
 window.onload = () => {
     document.body.classList.remove("is-preload");
 };
+
+
+
+
+
