@@ -64,8 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 KorisnickaPodrskaDescription: "Naša korisnička podrška dostupna je 24/7 putem e-maila i telefona te brzo i učinkovito rješava sva pitanja i tehničke probleme.",
                 IspisRacunaTitle: "Ispis računa",
                 IspisRacunaDescription: "Pregled i ispis računa – putem SMS-a ili s POS uređaja.",
-                IspisSmsRacunaLink: "Ispis SMS računa",
-                IspisPosRacunaLink: "Ispis računa s POS uređaja",
+                IspisSmsRacunaLink: "Ispis putem SMS",
+                IspisPosRacunaLink: "Ispis s POS uređaja",
+                ispisDescPre: "Brz pristup portalu za pregled i ispis računa putem ",
+                ispisDescSms: "SMS poruke",
+                ispisDescMid: " ili ",
+                ispisDescPos: "POS uređaja",
 
                 NasiPartneri: "Naši partneri",
 
@@ -191,8 +195,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 KorisnickaPodrskaDescription: "Our customer support is available 24/7 via email and phone, providing quick and efficient resolutions to all inquiries and technical issues.",
                 IspisRacunaTitle: "Receipt Printing",
                 IspisRacunaDescription: "View and print receipts – via SMS or POS device.",
-                IspisSmsRacunaLink: "SMS Receipt",
-                IspisPosRacunaLink: "POS Device Receipt",
+                IspisSmsRacunaLink: "Print via SMS",
+                IspisPosRacunaLink: "Print from POS device",
+                ispisDescPre: "Quick access to the portal to view and print receipts paid via ",
+                ispisDescSms: "SMS",
+                ispisDescMid: " or ",
+                ispisDescPos: "POS device",
 
 
                 NajcescePostavljenaPitanja: "Frequently Asked Questions",

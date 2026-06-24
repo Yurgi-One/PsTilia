@@ -11,49 +11,79 @@
 	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 	<style>
 		#content .invoice-links {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 1.5em;
 			margin-top: 1em;
+			padding-bottom: 0;
 		}
-		#content .invoice-link {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			gap: 1em;
-			width: 16em;
-			max-width: 100%;
-			padding: 2.25em 1.5em;
-			border: solid 1px rgba(255, 255, 255, 0.35);
-			border-radius: 8px;
-			color: #ffffff;
-			text-decoration: none;
+
+		#content .invoice-links li {
 			text-align: center;
-			line-height: 1.4;
-			transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 		}
-		#content .invoice-link svg {
-			width: 3.5em;
-			height: 3.5em;
+
+		#content .invoice-icon {
+			align-items: center;
+			border-bottom: none;
+			border-radius: 5%;
+			color: #89c4e4;
+			display: inline-flex;
+			height: 14.0625rem;
+			justify-content: center;
+			margin: 0 0 2em 0;
+			width: 14.0625rem;
+		}
+
+		#content .invoice-links li:nth-child(2) .invoice-icon {
 			color: #7fd2cc;
-			transition: color 0.2s ease;
 		}
-		#content .invoice-link span {
-			font-weight: 600;
-			letter-spacing: 0.025em;
+
+		#content .invoice-icon:hover {
+			color: #5A80C2;
 		}
-		#content .invoice-link:hover {
-			background-color: rgba(255, 255, 255, 0.075);
-			border-color: rgba(255, 255, 255, 0.75);
-			transform: translateY(-3px);
+
+		#content .invoice-icon svg {
+			display: block;
+			height: 6.25rem;
+			width: 6.25rem;
 		}
-		#content .invoice-link:hover svg {
-			color: #ffffff;
+
+		#content .invoice-links h3 {
+			margin-top: 0;
 		}
-		@media (max-width: 480px) {
-			#content .invoice-link { width: 100%; }
+
+		@media screen and (max-width: 1680px) {
+			#content .invoice-icon {
+				height: 12.375rem;
+				width: 12.375rem;
+			}
+
+			#content .invoice-icon svg {
+				height: 5.5rem;
+				width: 5.5rem;
+			}
+		}
+
+		@media screen and (max-width: 1280px) {
+			#content .invoice-icon {
+				height: 10.6875rem;
+				width: 10.6875rem;
+			}
+
+			#content .invoice-icon svg {
+				height: 4.75rem;
+				width: 4.75rem;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#content .invoice-icon {
+				height: 7.875rem;
+				margin-bottom: 1.5em;
+				width: 7.875rem;
+			}
+
+			#content .invoice-icon svg {
+				height: 3.5rem;
+				width: 3.5rem;
+			}
 		}
 	</style>
 </head>
@@ -62,36 +92,40 @@
 <div id="wrapper">
 	<div id="main">
 		<!-- Content -->
-		<section id="content" class="main">
+		<section id="content" class="main special">
 			<header class="major">
 				<h2 data-i18n="IspisRacunaTitle">Ispis računa</h2>
 			</header>
-			<div class="invoice-links">
-				<a class="invoice-link" href="https://parking.ipt.hr/public/smsinvoice" target="_blank" rel="noopener" aria-label="Ispis SMS računa">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-						<path d="M20.5 11.3a7.7 7.7 0 0 1-8.3 7.7 8.2 8.2 0 0 1-3.4-.7L3.5 19.5l1.2-4.1a7.6 7.6 0 0 1-.7-3.3A7.7 7.7 0 0 1 12 3.6h.4a7.7 7.7 0 0 1 8.1 7.7z"/>
-						<line x1="8.5" y1="10" x2="15.5" y2="10"/>
-						<line x1="8.5" y1="13.2" x2="13" y2="13.2"/>
-					</svg>
-					<span data-i18n="IspisSmsRacunaLink">Ispis SMS računa</span>
-				</a>
-				<a class="invoice-link" href="https://parking.ipt.hr/public/POSInvoice" target="_blank" rel="noopener" aria-label="Ispis računa s POS uređaja">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-						<rect x="6" y="2.5" width="12" height="19" rx="2"/>
-						<rect x="8.5" y="5" width="7" height="5" rx="0.6"/>
-						<circle cx="9.2" cy="13.2" r="0.7" fill="currentColor" stroke="none"/>
-						<circle cx="12" cy="13.2" r="0.7" fill="currentColor" stroke="none"/>
-						<circle cx="14.8" cy="13.2" r="0.7" fill="currentColor" stroke="none"/>
-						<circle cx="9.2" cy="16" r="0.7" fill="currentColor" stroke="none"/>
-						<circle cx="12" cy="16" r="0.7" fill="currentColor" stroke="none"/>
-						<circle cx="14.8" cy="16" r="0.7" fill="currentColor" stroke="none"/>
-						<circle cx="9.2" cy="18.8" r="0.7" fill="currentColor" stroke="none"/>
-						<circle cx="12" cy="18.8" r="0.7" fill="currentColor" stroke="none"/>
-						<circle cx="14.8" cy="18.8" r="0.7" fill="currentColor" stroke="none"/>
-					</svg>
-					<span data-i18n="IspisPosRacunaLink">Ispis računa s POS uređaja</span>
-				</a>
-			</div>
+			<ul class="features invoice-links">
+				<li>
+					<a class="invoice-icon grid-item" href="https://parking.ipt.hr/public/smsinvoice" target="_blank" rel="noopener" aria-label="Ispis SMS računa">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+							<path d="M20.5 11.3a7.7 7.7 0 0 1-8.3 7.7 8.2 8.2 0 0 1-3.4-.7L3.5 19.5l1.2-4.1a7.6 7.6 0 0 1-.7-3.3A7.7 7.7 0 0 1 12 3.6h.4a7.7 7.7 0 0 1 8.1 7.7z"/>
+							<line x1="8.5" y1="10" x2="15.5" y2="10"/>
+							<line x1="8.5" y1="13.2" x2="13" y2="13.2"/>
+						</svg>
+					</a>
+					<h3><a href="https://parking.ipt.hr/public/smsinvoice" target="_blank" rel="noopener" data-i18n="IspisSmsRacunaLink">Ispis putem SMS</a></h3>
+				</li>
+				<li>
+					<a class="invoice-icon grid-item" href="https://parking.ipt.hr/public/POSInvoice" target="_blank" rel="noopener" aria-label="Ispis računa s POS uređaja">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+							<rect x="6" y="2.5" width="12" height="19" rx="2"/>
+							<rect x="8.5" y="5" width="7" height="5" rx="0.6"/>
+							<circle cx="9.2" cy="13.2" r="0.7" fill="currentColor" stroke="none"/>
+							<circle cx="12" cy="13.2" r="0.7" fill="currentColor" stroke="none"/>
+							<circle cx="14.8" cy="13.2" r="0.7" fill="currentColor" stroke="none"/>
+							<circle cx="9.2" cy="16" r="0.7" fill="currentColor" stroke="none"/>
+							<circle cx="12" cy="16" r="0.7" fill="currentColor" stroke="none"/>
+							<circle cx="14.8" cy="16" r="0.7" fill="currentColor" stroke="none"/>
+							<circle cx="9.2" cy="18.8" r="0.7" fill="currentColor" stroke="none"/>
+							<circle cx="12" cy="18.8" r="0.7" fill="currentColor" stroke="none"/>
+							<circle cx="14.8" cy="18.8" r="0.7" fill="currentColor" stroke="none"/>
+						</svg>
+					</a>
+					<h3><a href="https://parking.ipt.hr/public/POSInvoice" target="_blank" rel="noopener" data-i18n="IspisPosRacunaLink">Ispis s POS uređaja</a></h3>
+				</li>
+			</ul>
 		</section>
 	</div>
 </div>
